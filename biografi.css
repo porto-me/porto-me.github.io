@@ -1,0 +1,455 @@
+/* ================= DASAR ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #fff;
+}
+
+.bio-page {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 55px 7%;
+}
+
+.bio-page h1,
+.bio-page h2,
+.bio-page p {
+    position: relative;
+    z-index: 1;
+}
+
+.bio-page h1,
+.bio-page h2 {
+    line-height: 1.2;
+}
+
+.bio-page h2 {
+    font-size: clamp(25px, 3vw, 38px);
+}
+
+.bio-page p,
+.bio-page li {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+}
+
+.bio-page img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ================= HALAMAN 1 ================= */
+
+.intro-page {
+    min-height: 100vh;
+    background: #fff;
+    align-items: stretch;
+}
+
+.intro-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58%;
+    height: 59%;
+    background: #fff0df;
+    border-radius: 0 0 48% 0;
+}
+
+.intro-text {
+    position: relative;
+    z-index: 2;
+    width: 47%;
+    align-self: flex-start;
+    margin-top: 8vh;
+    padding-right: 35px;
+}
+
+.intro-text h1 {
+    font-size: clamp(30px, 3.2vw, 44px);
+    color: #273b80;
+    margin-bottom: 18px;
+}
+
+.intro-text h1 span {
+    color: #f29a00;
+}
+
+.intro-text p {
+    max-width: 390px;
+    color: #292929;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.intro-photo {
+    position: absolute;
+    z-index: 2;
+    right: 8%;
+    bottom: 0;
+    width: 30%;
+    height: 75%;
+}
+
+.intro-photo img {
+    object-fit: contain;
+    object-position: bottom center;
+}
+
+
+/* ================= HALAMAN 2 ================= */
+
+.who-page {
+    flex-direction: column;
+    justify-content: center;
+    background: #fff;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.who-heading {
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.who-heading h2 {
+    font-size: clamp(26px, 3vw, 38px);
+    margin-bottom: 15px;
+    color: #263b7e;
+}
+
+.who-heading h2 span {
+    color: #f29a00;
+}
+
+.who-heading p {
+    font-size: 15px;
+}
+
+.who-gallery {
+    width: 100%;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.who-photo {
+    height: 270px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.who-photo img {
+    object-position: center;
+}
+
+
+/* ================= HALAMAN 3 ================= */
+
+.journey-page {
+    justify-content: space-between;
+    gap: 8%;
+    background: #fff;
+}
+
+.journey-text {
+    width: 43%;
+    max-width: 440px;
+}
+
+.journey-text h2 {
+    color: #f29a00;
+    font-size: clamp(25px, 3vw, 36px);
+    margin-bottom: 22px;
+}
+
+.journey-text h2 span {
+    color: #273b80;
+}
+
+.journey-text p {
+    margin-bottom: 15px;
+}
+
+.journey-photo {
+    width: 48%;
+    height: 390px;
+    position: relative;
+    padding: 10px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 0 5px #f5a000;
+}
+
+.journey-photo img {
+    border-radius: 4px;
+}
+
+
+/* ================= HALAMAN 4 ================= */
+
+.family-page {
+    justify-content: space-between;
+    gap: 6%;
+    background: #fff;
+}
+
+.family-photo {
+    width: 48%;
+    height: 440px;
+    flex-shrink: 0;
+}
+
+.family-photo img {
+    object-position: center;
+}
+
+.family-text {
+    width: 46%;
+}
+
+.family-text h2 {
+    color: #273b80;
+    margin-bottom: 20px;
+}
+
+.family-text h2 span {
+    color: #f29a00;
+}
+
+.family-text p {
+    margin-bottom: 18px;
+}
+
+.family-text ul {
+    list-style: none;
+}
+
+.family-text li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 13px;
+}
+
+.family-text li::before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    color: #f29a00;
+}
+
+.family-text strong {
+    color: #273b80;
+}
+
+
+/* ================= HALAMAN 5 ================= */
+
+.closing-page {
+    justify-content: space-between;
+    gap: 8%;
+    background: #fff;
+}
+
+.closing-text {
+    width: 42%;
+    max-width: 420px;
+}
+
+.closing-text h2 {
+    color: #f29a00;
+    font-size: clamp(27px, 3vw, 38px);
+    margin-bottom: 25px;
+}
+
+.closing-text h2 span {
+    display: block;
+    color: #273b80;
+}
+
+.closing-text p {
+    margin-bottom: 15px;
+}
+
+.closing-photo {
+    width: 44%;
+    height: 470px;
+}
+
+.closing-photo img {
+    object-position: center;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 700px) {
+    .bio-page {
+        min-height: auto;
+        padding: 65px 7%;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .intro-page {
+        min-height: 100vh;
+        padding-top: 55px;
+        padding-bottom: 0;
+    }
+
+    .intro-shape {
+        width: 100%;
+        height: 65%;
+        border-radius: 0 0 40% 0;
+    }
+
+    .intro-text {
+        width: 100%;
+        margin-top: 0;
+        padding-right: 0;
+    }
+
+    .intro-text p {
+        max-width: 100%;
+    }
+
+    .intro-photo {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        width: 75%;
+        height: 330px;
+        margin: auto 0 0 auto;
+    }
+
+    .who-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .who-photo {
+        height: 230px;
+    }
+
+    .journey-text,
+    .journey-photo,
+    .family-photo,
+    .family-text,
+    .closing-text,
+    .closing-photo {
+        width: 100%;
+        max-width: none;
+    }
+
+    .journey-photo,
+    .family-photo,
+    .closing-photo {
+        height: 320px;
+    }
+
+    .family-photo {
+        order: 1;
+    }
+
+    .family-text {
+        order: 2;
+    }
+
+    .closing-photo {
+        height: 350px;
+    }
+}
+
+
+/* ============ PIGURA FOTO BIOGRAFI ============ */
+
+.intro-photo img,
+.who-photo img,
+.journey-photo img,
+.family-photo img,
+.closing-photo img {
+    border: 8px solid #ffffff;
+    border-radius: 14px;
+    box-shadow:
+        0 8px 25px rgba(36, 48, 75, 0.15),
+        0 0 0 1px rgba(242, 154, 0, 0.25);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* Efek saat kursor diarahkan ke foto */
+.intro-photo img:hover,
+.who-photo img:hover,
+.journey-photo img:hover,
+.family-photo img:hover,
+.closing-photo img:hover {
+    transform: translateY(-5px);
+    box-shadow:
+        0 14px 32px rgba(36, 48, 75, 0.22),
+        0 0 0 2px rgba(242, 154, 0, 0.6);
+}
+
+/* Foto halaman pertama tetap utuh dan tidak terpotong */
+.intro-photo img {
+    object-fit: contain;
+    border-radius: 18px;
+}
+
+/* Pigura dua foto di halaman kedua */
+.who-photo {
+    padding: 8px;
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 16px;
+    box-shadow: 0 8px 22px rgba(36, 48, 75, 0.12);
+}
+
+/* Pigura foto perjalanan dan penutup */
+.journey-photo,
+.closing-photo {
+    padding: 10px;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(36, 48, 75, 0.13);
+}
+
+/* Pigura foto keluarga */
+.family-photo {
+    padding: 10px;
+    background: #fff0df;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(36, 48, 75, 0.12);
+}
+
+/* Supaya foto tetap rapi di HP */
+@media (max-width: 700px) {
+    .intro-photo img,
+    .who-photo img,
+    .journey-photo img,
+    .family-photo img,
+    .closing-photo img {
+        border-width: 5px;
+        border-radius: 10px;
+    }
+}
